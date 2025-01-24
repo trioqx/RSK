@@ -12,5 +12,16 @@ setInterval(updateClock, 1000);
 
 // إظهار النافذة المنبثقة
 setTimeout(() => {
-    document.querySelector('.popup').classList.add('show');
+    document.querySelector('.popup').style.display = 'block';
+    document.querySelector('.popup').style.opacity = '1';
 }, 3000); // ظهور النافذة بعد 3 ثوان
+
+// تأثيرات التمرير
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        if (window.scrollY + window.innerHeight > section.offsetTop) {
+            section.classList.add('visible');
+        }
+    });
+});
