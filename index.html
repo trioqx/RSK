@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSK</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>RSK - تسجيل الدخول</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- الشريط العلوي -->
-    <nav>
-        <ul>
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">عن الموقع</a></li>
-            <li><a href="#">الخدمات</a></li>
-            <li><a href="#">اتصل بنا</a></li>
-            <li><a href="#">مدونة</a></li>
-        </ul>
-    </nav>
 
-    <!-- خلفية الأنمي -->
-    <section class="hero">
-        <h1 class="title">RSK</h1>
-    </section>
-
-    <!-- النافذة المنبثقة - إنستقرام -->
-    <div class="popup">
-        <p>تابعني على إنستقرام: <strong>@rskove.old</strong></p>
+    <div class="header">
+        <div class="time-and-theme">
+            <div id="time" class="time"></div>
+            <button id="theme-toggle" class="theme-toggle">
+                <span id="sun-icon" class="theme-icon">🌞</span>
+                <span id="moon-icon" class="theme-icon">🌙</span>
+            </button>
+        </div>
     </div>
 
-    <!-- الساعة في الزاوية اليمنى -->
-    <div id="clock"></div>
+    <div class="login-container">
+        <h1 id="rsk-text" class="rsk-text">RSK</h1>
+        <h2>تسجيل الدخول</h2>
+        <form action="#" id="login-form">
+            <input type="text" id="username" placeholder="اسم المستخدم" required>
+            <input type="password" id="password" placeholder="كلمة المرور" required>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
